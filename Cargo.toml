@@ -1,0 +1,16 @@
+[package]
+name = "en-prise"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "En Prise: chess where the pieces fight, on an isometric board in the terminal. Rust + Ratatui"
+
+[dependencies]
+ratatui = "0.30"
+rodio = { version = "0.22", default-features = false, features = ["playback"] }
+cozy-chess = { version = "0.3", features = ["std"] }
+log = "0.4"
+env_logger = "0.11"
+
+[profile.release]
+debug = 1
